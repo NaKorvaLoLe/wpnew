@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style/css/style.css">
+    <title>Главная</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container">
+        <ul class="header__list">
+          <li><a href="#" class="header__list-link">Главная</a></li>
+          <li><a href="./checklist.html" class="header__list-link">Чеклист</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main container">
+      
+      <h1 class="main__title">Калькулятор корма для собак</h1>
+      <p class="main__text">Введите данные о вашей собаке, чтобы рассчитать рекомендуемое количество корма в день.</p>
+      <form class="main__form" id="form">
+        <label for="breed">Порода:</label>
+        <select class="main__select" id="breed">
+          <option value="овчарка">Овчарка</option>
+          <option value="лабрадор">Лабрадор</option>
+        </select>
+  
+        <label for="age">Возраст:</label>
+        <select class="main__select" id="age">
+          <option value="меньше 1">Меньше 1 года</option>
+          <option value="1-5">1-5 лет</option>
+          <option value="больше 5">Больше 5 лет</option>
+        </select>
+  
+        <label for="activity">Уровень активности:</label>
+        <div class="main__activity">
+          <input type="radio" name="activity" id="moderate" value="умеренный" checked>
+          <label for="moderate">Умеренный</label>
+          <input type="radio" name="activity" id="active" value="активный">
+          <label for="active">Активный</label>
+        </div>
+  
+        <label for="weight">Вес (кг):</label>
+        <input class="main__weight" type="number" id="weight">
+  
+        <input class="main__btn"  type="submit" value="Рассчитать">
+      </form>
+      <p class="main__result"></p>
+    </section>
+    
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>

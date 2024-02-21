@@ -1,0 +1,92 @@
+.checklist{
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.5rem;
+    &__admin{
+        margin-top: 50px;
+        margin-top: 20px;
+        background-color: #00b92b;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    &__item {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        vertical-align: top;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    
+    
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 20px;
+    }
+    
+    &__sublist {
+        list-style-type: none;
+        &-item{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    
+    &__subitem label {
+        flex-grow: 1;
+    }
+    
+    
+    
+    &__btn {
+        background-color: #89aeff;
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        &-create {
+            margin-top: 20px;
+            background-color: #ecb315;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        &-add{
+            background-color: #89aeff;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+    &__form{
+        display: none;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border: solid 1px #89aeff;
+        border-radius: 10px;
+        & input{
+            margin-bottom: 10px;
+            padding: 10px;
+            border: solid 1px #89aeff;
+        }
+    }
+    
+}
+
+.hidden {
+    display: none;
+}

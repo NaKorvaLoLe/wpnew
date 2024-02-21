@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 10px;
+  background-color: #89aeff;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.header__list-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  padding: 5px 20px;
+  border: solid 1px #fff;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.header__list-link:hover {
+  background-color: #fff;
+}
+
+.main {
+  margin-top: 30px;
+}
+.main__title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.main__text {
+  font-size: 2rem;
+  margin-top: 25px;
+}
+.main__form {
+  font-size: 1.4rem;
+  padding: 10px;
+  margin-top: 25px;
+  border: solid 1px #89aeff;
+  border-radius: 10px;
+  display: grid;
+}
+.main__select {
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border: solid 1px #89aeff;
+}
+.main__activity {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main__weight {
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border: solid 1px #89aeff;
+}
+.main__btn {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #89aeff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.main__result {
+  font-size: 2rem;
+}
+
+.checklist {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.checklist__admin {
+  margin-top: 50px;
+  margin-top: 20px;
+  background-color: #00b92b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.checklist__item {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: top;
+  align-items: center;
+  gap: 10px;
+}
+.checklist__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+.checklist__sublist {
+  list-style-type: none;
+}
+.checklist__sublist-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.checklist__subitem label {
+  flex-grow: 1;
+}
+.checklist__btn {
+  background-color: #89aeff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.checklist__btn-create {
+  margin-top: 20px;
+  background-color: #ecb315;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.checklist__btn-add {
+  background-color: #89aeff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.checklist__form {
+  display: none;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: solid 1px #89aeff;
+  border-radius: 10px;
+}
+.checklist__form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #89aeff;
+}
+
+.hidden {
+  display: none;
+}

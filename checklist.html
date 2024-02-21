@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style/css/style.css">
+    <title>Чеклист</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="container">
+      <ul class="header__list">
+        <li><a href="./index.html" class="header__list-link">Главная</a></li>
+        <li><a href="#" class="header__list-link">Чеклист</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="container checklist">
+    <button class="checklist__admin">Включить режим администратора</button>
+    <ul class="checklist__list">
+      <li class="checklist__item">
+        <div class="checklist__wrapper">
+          <input type="checkbox" id="checkbox-1" />
+          <label for="checkbox-1">Подготовительные работы</label>
+          <ul class="checklist__sublist hidden">
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-1-1" />
+              <label for="checkbox-1-1">Анализ конкурентов</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-1-2" />
+              <label for="checkbox-1-2">Сбор семантического ядра</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-1-3" />
+              <label for="checkbox-1-3">Оптимизация сайта</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-1-4" />
+              <label for="checkbox-1-4">Настройка аналитики</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-1-5" />
+              <label for="checkbox-1-5">Составление контент-плана</label>
+            </li>
+          </ul>
+          <form class="checklist__form">
+            <input class="checklist__input-description" type="text" name="text" id="text" placeholder="Введите описание">
+            <input class="checklist__input-url" type="url" name="url" id="url"  placeholder="Введите ссылку">
+            <button class="checklist__btn-add">Добавить элемент</button>
+          </form>
+        </div>
+        <button class="checklist__btn" id="btn-1">Показать больше</button>
+      </li>
+      <li class="checklist__item">
+        <div class="checklist__wrapper">
+          <input type="checkbox" id="checkbox-2" />
+          <label for="checkbox-2">SEO-аналитика</label>
+          <ul class="checklist__sublist hidden">
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-2-1" />
+              <label for="checkbox-2-1">Анализ технических ошибок</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-2-2" />
+              <label for="checkbox-2-2">Анализ контента</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-2-3" />
+              <label for="checkbox-2-3">Анализ ссылочной массы</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-2-4" />
+              <label for="checkbox-2-4">Анализ юзабилити</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-2-5" />
+              <label for="checkbox-2-5">Составление рекомендаций</label>
+            </li>
+          </ul>
+          <form class="checklist__form">
+            <input class="checklist__input-description" type="text" name="text" id="text" placeholder="Введите описание">
+            <input class="checklist__input-url" type="url" name="url" id="url"  placeholder="Введите ссылку">
+            <button class="checklist__btn-add">Добавить элемент</button>
+          </form>
+        </div>
+        <button class="checklist__btn" id="btn-2">Показать больше</button>
+      </li>
+      <li class="checklist__item">
+        <div class="checklist__wrapper">
+
+          <input type="checkbox" id="checkbox-3" />
+          <label for="checkbox-3">Стратегия продвижения</label>
+          <ul class="checklist__sublist hidden">
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-3-1" />
+              <label for="checkbox-3-1">Анализ целевой аудитории</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-3-2" />
+              <label for="checkbox-3-2">Определение каналов продвижения</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-3-3" />
+              <label for="checkbox-3-3">Разработка контент-стратегии</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-3-4" />
+              <label for="checkbox-3-4">Составление медиаплана</label>
+            </li>
+            <li class="checklist__subitem">
+              <input type="checkbox" id="checkbox-3-5" />
+              <label for="checkbox-3-5">Расчет бюджета</label>
+            </li>
+          </ul>
+          <form class="checklist__form">
+            <input class="checklist__input-description" type="text" name="text" id="text" placeholder="Введите описание">
+            <input class="checklist__input-url" type="url" name="url" id="url"  placeholder="Введите ссылку">
+            <button class="checklist__btn-add">Добавить элемент</button>
+          </form>
+        </div>
+        <button class="checklist__btn" id="btn-3">Показать больше</button>
+      </li>
+    </ul>
+    <button class="checklist__btn-create">Создать</button>
+    <div class="checklist__result"></div>
+  </section>
+  <script src="./public/js/checklist.js"></script>
+</body>
+</html>
